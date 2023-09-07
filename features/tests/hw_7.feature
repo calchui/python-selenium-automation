@@ -5,3 +5,15 @@ Feature: Verify Empty Cart
       Given Open Amazon page
       When Click Cart Icon
       Then Verify Amazon Cart is Empty Text
+
+
+
+  Scenario: Verify and search for shelves and then add to cart
+    Given Open Amazon page
+    When Click on Search Bar
+#    Then Click Search
+    Then Click on shelves
+    Then Add to Cart
+    Then Click No Thanks
+    Then Click on Cart
+    Then Verify Shelves in Cart
